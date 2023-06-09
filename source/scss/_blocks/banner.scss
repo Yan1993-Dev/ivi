@@ -1,0 +1,40 @@
+.banner {
+    position: relative;
+    background-color: $banner-background;
+    z-index: 3;
+    &::before {
+        content:'';
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 120px;
+        top: 0;
+        right: -1px;    
+        background-image: url('../img/triangle.svg');
+        z-index: -1;
+    }
+    &__title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow-y: hidden;
+        padding-top: 140px;
+        padding-left: 30px;
+        margin-bottom: 100px;
+        color: $banner-title-color;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px 10px 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        &-item {
+            padding: 5px;
+            background: $banner-badge-background;
+            color: $banner-text-color;
+        }
+    }
+}
