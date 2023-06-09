@@ -1,19 +1,26 @@
-<div class="description">
+<section class="description">
+    <h2 class="description__title hidden">Блок с перечислением</h2>
     <ul class="description__list">
         @@include('blocks/item.html', {
             'sourse': "../img/one.svg",
+            'width': "60",
+            'height': "60",
             'class': "description__list-item_top",
             'text': "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, illum."
         })
         @@include('blocks/item.html', {
             'sourse': "../img/two.svg",
+            'width': "60",
+            'height': "60",
             'class': "description__list-item_center",
             'text': "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officia cupiditate, deleniti dolore eveniet iste voluptatibus excepturi maiores quo nostrum minus optio, non dolorum sed quis odit porro cum illo."
         })
         @@include('blocks/item.html', {
             'sourse': "../img/three.svg",
+            'width': "60",
+            'height': "60",
             'class': "description__list-item_bottom",
             'text': "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere neque earum recusandae, enim eaque blanditiis."
         })
     </ul>
-</div>
+</section>
